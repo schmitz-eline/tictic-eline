@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tictic/screens/welcome/widgets/logo_welcome.dart';
+import 'package:tictic/screens/welcome/widgets/text_divider.dart';
 import 'package:tictic/screens/welcome/widgets/text_slider_with_bullets.dart';
 
 class Welcome extends StatefulWidget {
@@ -30,6 +31,7 @@ class _WelcomeState extends State<Welcome> {
               Spacer(),
               TextSliderWithBullets(),
               Spacer(),
+              TextDivider(text: "Ou"),
             ],
           ),
         ),
