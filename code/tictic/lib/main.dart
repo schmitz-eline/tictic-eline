@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tictic/constants/colors.dart';
-import 'package:tictic/screens/welcome.dart';
+import 'package:tictic/screens/welcome/welcome.dart';
 
 void main() {
   runApp(const MyApp());

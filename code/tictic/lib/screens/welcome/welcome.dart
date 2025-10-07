@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tictic/screens/welcome/widgets/logo_welcome.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({super.key});
@@ -14,13 +15,7 @@ class Welcome extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        child: SafeArea(
-          child: Column(
-            children: [
-              Text("Bonjour"),
-            ],
-          ),
-        ),
+        child: SafeArea(child: Column(children: [LogoWelcome()])),
       ),
     );
   }
