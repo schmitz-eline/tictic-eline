@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tictic/screens/register/register.dart';
 
 import '../../../constants/colors.dart';
 import '../../../constants/sizes.dart';
@@ -33,7 +34,12 @@ class CallToActions extends StatelessWidget {
                 ),
                 SizedBox(width: kHorizontalPadding),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(
+                      context,
+                      Register.routeName,
+                    );
+                  },
                   child: Text("Créer mon compte"),
                 ),
               ],
