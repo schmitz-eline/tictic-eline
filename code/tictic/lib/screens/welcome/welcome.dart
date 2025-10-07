@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:tictic/screens/welcome/widgets/logo_welcome.dart';
+import 'package:tictic/screens/welcome/widgets/text_slider_with_bullets.dart';
 
-class Welcome extends StatelessWidget {
+class Welcome extends StatefulWidget {
   const Welcome({super.key});
+
+  @override
+  State<Welcome> createState() => _WelcomeState();
+}
+
+class _WelcomeState extends State<Welcome> {
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +22,17 @@ class Welcome extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        child: SafeArea(child: Column(children: [LogoWelcome()])),
+        child: SafeArea(
+          child: Column(
+            children: [
+              Spacer(),
+              LogoWelcome(),
+              Spacer(),
+              TextSliderWithBullets(),
+              Spacer(),
+            ],
+          ),
+        ),
       ),
     );
   }
