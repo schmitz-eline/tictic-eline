@@ -30,7 +30,11 @@ class TextSlider extends StatelessWidget {
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: kHorizontalPadding),
-            child: Text(items[index], style: kTagLine),
+            child: Text(
+              items[index],
+              style: kTagLine,
+              textAlign: TextAlign.center,
+            ),
           );
         },
       ),
