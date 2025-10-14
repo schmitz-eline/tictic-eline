@@ -1,6 +1,6 @@
 # tictic
 
-A new Flutter project.
+Tictic Application
 
 ## Getting Started
 
