@@ -1,0 +1,26 @@
+{
+  "appTitle": "TicTic Application",
+  "continueWithOutLogin": "Continue without login",
+  "or": "or",
+  "login": "Login",
+  "register": "Register",
+  "username_label": "Username",
+  "username_placeholder": "John Doe",
+  "user_email_label": "E-mail",
+  "user_email_placeholder": "john@doe.be",
+  "user_password_label": "Password",
+  "form_field_required": "The field \"{field_name}\" is required.",
+  "@form_field_required": {
+    "description": "Error message when a form field is required",
+    "placeholders": {
+      "field_name": {
+        "type": "String",
+        "example": "Username"
+      }
+    }
+  },
+  "text_slide_1": "Financial harmony in your groups, made simple!",
+  "text_slide_2": "Instant calculations, fairness guaranteed with TicTic!",
+  "text_slide_3": "Tedious math? No thanks. Choose simplicity with TicTic!",
+  "text_slide_4": "TicTic: Share your expenses effortlessly!"
+}

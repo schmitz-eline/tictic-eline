@@ -1,0 +1,26 @@
+{
+  "appTitle": "Application TicTic",
+  "continueWithOutLogin": "Continuer sans compte",
+  "or": "ou",
+  "login": "Connexion",
+  "register": "Inscription",
+  "username_label": "Nom d’utilisateur",
+  "username_placeholder": "John Doe",
+  "user_email_label": "E-mail",
+  "user_email_placeholder": "john@doe.be",
+  "user_password_label": "Mot de passe",
+  "form_field_required": "Le champ \"{field_name}\" est requis.",
+  "@form_field_required": {
+    "description": "Error message when a form field is required",
+    "placeholders": {
+      "field_name": {
+        "type": "String",
+        "example": "Username"
+      }
+    }
+  },
+  "text_slide_1": "L’harmonie financière dans vos groupes, en toute simplicité !",
+  "text_slide_2": "Calculs instantanés, équité garantie avec TicTic !",
+  "text_slide_3": "Calculs fastidieux ? Non merci. Optez pour la simplicité avec TicTic !",
+  "text_slide_4": "TicTic : Vos dépenses partagées en toute simplicité !"
+}
