@@ -10,12 +10,12 @@ class Bullets extends StatelessWidget {
     super.key,
     required this.items,
     required this.pageController,
-    required this.currentIndex,
+    required this.currentIdx,
   });
 
   final List<String> items;
   final PageController pageController;
-  final int currentIndex;
+  final int currentIdx;
 
   @override
   Widget build(BuildContext context) {
@@ -35,13 +35,12 @@ class Bullets extends StatelessWidget {
             marginRight: items.indexOf(item) == items.length - 1
                 ? 0
                 : kHorizontalPaddingL,
-            width: (
-                (MediaQuery.of(context).size.width -
+            width:
+                ((MediaQuery.of(context).size.width -
                     kHorizontalPaddingXL -
                     (items.length - 1) * kHorizontalPaddingL) /
-                    items.length
-            ),
-            color: items.indexOf(item) == currentIndex
+                items.length),
+            color: items.indexOf(item) == currentIdx
                 ? kMainColor
                 : kSecondaryColor,
           ),

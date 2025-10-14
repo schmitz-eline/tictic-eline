@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ScaffoldWithImage extends StatelessWidget {
-  const ScaffoldWithImage({
-    super.key,
-    required this.child,
-  });
+  const ScaffoldWithImage({super.key, required this.child});
   final Widget child;
 
   @override
@@ -18,9 +15,7 @@ class ScaffoldWithImage extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        child: SafeArea(
-            child: child
-        ),
+        child: SafeArea(child: child),
       ),
     );
   }

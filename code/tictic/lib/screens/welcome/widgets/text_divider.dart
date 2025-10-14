@@ -4,10 +4,7 @@ import '../../../constants/colors.dart';
 import '../../../constants/sizes.dart';
 
 class TextDivider extends StatelessWidget {
-  const TextDivider({
-    super.key,
-    required this.text,
-  });
+  const TextDivider({super.key, required this.text});
 
   final String text;
 

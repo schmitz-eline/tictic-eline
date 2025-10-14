@@ -11,8 +11,8 @@ class LogoWelcome extends StatelessWidget {
     return SvgPicture.asset(
       "assets/icons/logo.svg",
       height: MediaQuery.of(context).size.height * kLogoSizeRatioWelcome,
-      width: MediaQuery.of(context).size.width * kLogoSizeRatioWelcome,
-      semanticsLabel: "Le logo de Tictic",
+      width: MediaQuery.of(context).size.height * kLogoSizeRatioWelcome,
+      semanticsLabel: 'Le logo TicTic',
     );
   }
 }

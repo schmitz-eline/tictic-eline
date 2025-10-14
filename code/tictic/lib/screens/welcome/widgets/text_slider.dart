@@ -7,14 +7,14 @@ class TextSlider extends StatelessWidget {
   TextSlider({
     super.key,
     required this.pageController,
-    required this.currentIndex,
+    required this.currentIdx,
     required this.items,
-    required this.onPageChanged
+    required this.onPageChanged,
   });
 
   final PageController pageController;
   final List<String> items;
-  int currentIndex;
+  int currentIdx;
   void Function(int)? onPageChanged;
 
   @override

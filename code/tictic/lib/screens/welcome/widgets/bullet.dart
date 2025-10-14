@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tictic/constants/colors.dart';
-import 'package:tictic/constants/sizes.dart';
+import '../../../constants/colors.dart';
+import '../../../constants/sizes.dart';
 
 class Bullet extends StatelessWidget {
   const Bullet({
