@@ -5,6 +5,7 @@ import 'package:tictic/screens/welcome/widgets/text_divider.dart';
 import '../../../constants/colors.dart';
 import '../../../constants/sizes.dart';
 import '../../register/register.dart';
+import '../../login/login.dart';
 
 class CallToActions extends StatelessWidget {
   const CallToActions({super.key});
@@ -28,7 +29,9 @@ class CallToActions extends StatelessWidget {
             child: Row(
               children: [
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, Login.routeName);
+                  },
                   child: Text(AppLocalizations.of(context)!.login),
                 ),
                 SizedBox(width: kHorizontalPadding),

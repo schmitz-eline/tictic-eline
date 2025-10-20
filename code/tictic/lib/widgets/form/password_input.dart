@@ -13,7 +13,7 @@ class PasswordInput extends StatelessWidget {
       labelText: AppLocalizations.of(
         context,
       )!.user_password_label,
-      prefixIcon: Icon(Icons.password),
+      prefixIcon: Icon(Icons.lock),
       validator: (value) {
         if (value == null || value.isEmpty) {
           return AppLocalizations.of(
