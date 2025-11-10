@@ -4,11 +4,14 @@ import '../../l10n/app_localizations.dart';
 import 'my_text_input.dart';
 
 class UsernameInput extends StatelessWidget {
-  const UsernameInput({super.key});
+  const UsernameInput({super.key, this.usernameController});
+
+  final TextEditingController? usernameController;
 
   @override
   Widget build(BuildContext context) {
     return MyTextInput(
+      controller: usernameController,
       labelText: AppLocalizations.of(context)!.username_label,
       prefixIcon: Icon(Icons.person),
       hintText: AppLocalizations.of(context)!.username_placeholder,

@@ -13,6 +13,7 @@ class MyTextInput extends StatelessWidget {
     this.hintText,
     this.keyboardType,
     this.obscureText = false,
+    this.controller,
   });
 
   final Widget? prefixIcon;
@@ -21,10 +22,12 @@ class MyTextInput extends StatelessWidget {
   final String? hintText;
   final TextInputType? keyboardType;
   final bool obscureText;
+  final TextEditingController? controller;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
       keyboardType: keyboardType,
       validator: validator,
       obscureText: obscureText,

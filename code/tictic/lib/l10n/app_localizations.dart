@@ -98,7 +98,7 @@ abstract class AppLocalizations {
   /// No description provided for @appTitle.
   ///
   /// In en, this message translates to:
-  /// **'TicTic Application'**
+  /// **'Application TicTic (en)'**
   String get appTitle;
 
   /// No description provided for @continueWithOutLogin.
@@ -112,6 +112,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'or'**
   String get or;
+
+  /// No description provided for @settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get settings;
+
+  /// No description provided for @createAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Create Account'**
+  String get createAccount;
+
+  /// No description provided for @invite.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite a friend'**
+  String get invite;
+
+  /// No description provided for @add_transaction.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Transaction'**
+  String get add_transaction;
+
+  /// No description provided for @logout.
+  ///
+  /// In en, this message translates to:
+  /// **'Logout'**
+  String get logout;
 
   /// No description provided for @login.
   ///
@@ -134,7 +164,7 @@ abstract class AppLocalizations {
   /// No description provided for @username_placeholder.
   ///
   /// In en, this message translates to:
-  /// **'John Doe'**
+  /// **'JohnDoe'**
   String get username_placeholder;
 
   /// No description provided for @user_email_label.
@@ -155,10 +185,76 @@ abstract class AppLocalizations {
   /// **'Password'**
   String get user_password_label;
 
+  /// No description provided for @already_have_account.
+  ///
+  /// In en, this message translates to:
+  /// **'Already have an account?'**
+  String get already_have_account;
+
+  /// No description provided for @dont_have_account.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t have an account?'**
+  String get dont_have_account;
+
+  /// No description provided for @wrong_password.
+  ///
+  /// In en, this message translates to:
+  /// **'Wrong password provided for that user'**
+  String get wrong_password;
+
+  /// No description provided for @invalid_email.
+  ///
+  /// In en, this message translates to:
+  /// **'This email is invalid'**
+  String get invalid_email;
+
+  /// No description provided for @user_disabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account has been disabled'**
+  String get user_disabled;
+
+  /// No description provided for @user_not_found.
+  ///
+  /// In en, this message translates to:
+  /// **'This user does not exist'**
+  String get user_not_found;
+
+  /// No description provided for @email_already_in_use.
+  ///
+  /// In en, this message translates to:
+  /// **'This email is already in use'**
+  String get email_already_in_use;
+
+  /// No description provided for @operation_not_allowed.
+  ///
+  /// In en, this message translates to:
+  /// **'This operation is not allowed'**
+  String get operation_not_allowed;
+
+  /// No description provided for @account_exists_with_different_credential.
+  ///
+  /// In en, this message translates to:
+  /// **'Wrong password provided for that user'**
+  String get account_exists_with_different_credential;
+
+  /// No description provided for @invalid_credential.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account credential is not valid'**
+  String get invalid_credential;
+
+  /// Error message when the password is too short
+  ///
+  /// In en, this message translates to:
+  /// **'Your password must be at least {nb} characters'**
+  String weak_password(Object nb);
+
   /// Error message when a form field is required
   ///
   /// In en, this message translates to:
-  /// **'The field \"{field_name}\" is required.'**
+  /// **'The field \"{field_name}\"is required.'**
   String form_field_required(String field_name);
 
   /// No description provided for @text_slide_1.
@@ -211,9 +307,9 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-          'an issue with the localizations generation tool. Please file an issue '
-          'on GitHub with a reproducible sample app and the gen-l10n configuration '
-          'that was used.'
+    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+    'an issue with the localizations generation tool. Please file an issue '
+    'on GitHub with a reproducible sample app and the gen-l10n configuration '
+    'that was used.'
   );
 }

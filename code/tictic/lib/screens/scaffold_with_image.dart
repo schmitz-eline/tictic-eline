@@ -15,7 +15,9 @@ class ScaffoldWithImage extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        child: SafeArea(child: child),
+        child: SafeArea(
+          child: child,
+        ),
       ),
     );
   }

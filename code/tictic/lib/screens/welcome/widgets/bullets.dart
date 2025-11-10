@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../constants/colors.dart';
-import '../../../constants/durations.dart';
+import '../../../constants/durations.dart' show kAnimationDurationShort;
 import '../../../constants/sizes.dart';
 import 'bullet.dart';
 
@@ -36,10 +36,10 @@ class Bullets extends StatelessWidget {
                 ? 0
                 : kHorizontalPaddingL,
             width:
-                ((MediaQuery.of(context).size.width -
+                (((MediaQuery.of(context).size.width -
                     kHorizontalPaddingXL -
                     (items.length - 1) * kHorizontalPaddingL) /
-                items.length),
+                items.length)),
             color: items.indexOf(item) == currentIdx
                 ? kMainColor
                 : kSecondaryColor,
